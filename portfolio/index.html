@@ -1,0 +1,209 @@
+<!---this my html code-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="header" id="#header">
+        <div class="container">
+            <nav>
+                <h1><span>V</span>arsha <span>G</span>owda</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h5>Web Developer</h5>
+                <h1>Hi, I'm <span>Varshitha</span></h1>
+                <p>from Banglore</p>
+            </div>
+        </div>
+    </div>
+    <!-----about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/black.jpeg.jpeg" alt="me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Iam a motivated computer science graduate skilled in Java, SQL, and web development seeking a role to apply and 
+                        grow expertise. Eager to contribute to innovative software projects and collaborate with dynamic teams in a 
+                        challenging environment.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('works')">Works</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web development</span><br>Designing the websites using HTML,CSS and JavaScript</li>
+                                <li><span>Programming languages</span><br>Java,Python,C</li>
+                                <li><span>Database</span><br>SQL</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="works">
+                            <ul>
+                                <li><span>Certification</span><br>Azure AI Fundamentals - Microsoft <br>
+                                    Introduction to HTML,CSS and JavaScript Authorized by IBM - Corseera <br>
+                                    Python(Basics) - Hackerrank</li>
+                                <li><span>Internships</span><br>Virtual Internship program on web development <br> Global health 
+                                expenditure analysis in power BI</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Bachelor of engineering</span><br>Computer Science and Engineering <br> S J C Institute of Technology,Chikkaballapur <br>CGPA : 8.8</li>
+                                <li><span> 2<sup>nd</sup> P U C</span><br>(PCMB) Vidyadri P U College , Chikkaballapur<br> Percentage : 95</li>
+                                <li><span>10<sup>th</sup> Standard</span><br>S J C Rural Vidyaniketan,Doddaballapur <br>Percentage : 95.04</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------Projects------->
+    <div class="projects" id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h2>Ecommerce Management System</h2>
+            <p>Basic website was built using HTML and CSS as front-end and JavaScript and PHP as back-end with MySQL for 
+                storing database. Website had option to create new accounts and ordering either through
+                their account or as a guest . </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-building"></i>
+                    <h2>House Rental Application</h2>
+            <p>This application was built using XML for structuring the visual components and Java as a back-end and functionality.
+                Implemented features adding, deleting and updating the rentel details.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-leaf"></i>
+                    <h2>Recognition of Plant disease </h2>
+            <p>Plant leaf disease detection 
+                using deep learning models like ANN, ResNet and SRCNN in which the image is uploaded from dataset and
+                gives output as diseased or healthy plant. If diseased, it also gives the accurate disease 
+                name which plant has been affected.</p>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <br><br>
+   <!-- --------Portfolio----------- -->
+   <div id="portfolio" >
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/Calculator.jpeg" alt="">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>The basic mathematical calaculator is built using HTML,CSS and JavaScript in which 
+                        we can perform required basic mathematical operations</p>
+                        <a href="https://simple-calculator-varsha.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                </div>
+            <div class="work"></div>
+            <div class="work"></div>
+        </div>
+    </div>
+   </div>
+    <!-- contact -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> gowdavarsha114@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8722632690</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/varshitha-r-361415240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Varshagowda14"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/varsha_ramachandra_?igsh=MWdwcDh4ZzJmZWF3Mw=="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./images/varshitha_resume.pdf" download class="btn2">Download CV</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <textarea name="message" rows="6" placeholder="Your message to me"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright by Varsha Gowda ❤️</p>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var tabname;
+        function opentab(tabname){
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");  
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }  
+
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw5UCnuqmChNcCpnTY9HKniccNhcacyZV9dwELX6P2Vorq3LjunyybNkdmEy3xV_JbHIw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
